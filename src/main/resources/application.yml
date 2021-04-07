@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://127.0.0.1:15432/huddle"
+    username: postgres
+    password: password
+  jpa:
+    open-in-view: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
