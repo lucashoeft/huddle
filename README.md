@@ -38,3 +38,5 @@ For further insights check out the data model.
 ![Data Model](./assets/data_model.png)
 
 Disclaimer: The `Friends`-table is really time inefficient, but I only wanted to use a RDBMS. For real world usage, a graph database would be way more efficient!
+
+### User Interface Mockups
