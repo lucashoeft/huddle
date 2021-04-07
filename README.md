@@ -22,11 +22,19 @@ To stop Docker container run following command:
 
 **2. Start up the Spring Boot application (e.g. via IntelliJ)**
 
-**3. Open `localhost:8080` in your browser**
+**3. Open** `localhost:8080` **in your browser**
 ## Concept
 
-tbd
+Main features:
+* Request to be friends
+* React to friend request
+* Create events
+* React to invitations
+
+For further insights check out the data model.
 
 ### Data Model
 
-tbd
+![Data Model](./assets/data_model.png)
+
+Disclaimer: The `Friends`-table is really time inefficient, but I only wanted to use a RDBMS. For real world usage, a graph database would be way more efficient!
