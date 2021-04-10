@@ -4,6 +4,13 @@ This is the backend for an imaginary application similar to 'Beer With Me' where
 
 Warning: Not ready for production!
 
+## Used Technologies
+
+* Maven
+* Docker
+* Spring Boot 2.4.4 (with Maven, Java 11)
+* Postgres 12
+
 ## Get started
 
 **1. Start up Docker**

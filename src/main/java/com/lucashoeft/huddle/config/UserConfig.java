@@ -1,4 +1,4 @@
-package com.lucashoeft.huddle.user;
+package com.lucashoeft.huddle.config;
 
 import com.lucashoeft.huddle.event.Event;
 import com.lucashoeft.huddle.event.EventRepository;
@@ -14,11 +14,12 @@ import com.lucashoeft.huddle.invitation.Invitation;
 import com.lucashoeft.huddle.invitation.InvitationId;
 import com.lucashoeft.huddle.invitation.InvitationRepository;
 import com.lucashoeft.huddle.invitation.InvitationStatus;
+import com.lucashoeft.huddle.user.User;
+import com.lucashoeft.huddle.user.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.List;
@@ -36,21 +37,18 @@ public class UserConfig {
             FriendRequestRepository friendRequestRepository) {
         return args -> {
             User user1 = new User(
-                    1L,
                     "luka",
                     "luka123@gmail.com",
                     "luka456",
                     LocalDateTime.of(2021,Month.APRIL,7,18,2)
             );
             User user2 = new User(
-                    2L,
                     "ben",
                     "benqwertz@gmail.com",
                     "benasdf",
                     LocalDateTime.of(2021,Month.APRIL,7,18,8)
             );
             User user3 = new User(
-                    3L,
                     "clara",
                     "clara98@gmail.com",
                     "yxclarayx",

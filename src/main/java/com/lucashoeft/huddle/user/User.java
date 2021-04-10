@@ -3,10 +3,12 @@ package com.lucashoeft.huddle.user;
 import com.lucashoeft.huddle.event.Event;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -15,6 +17,15 @@ import java.util.List;
 public class User {
 
     @Id
+    @SequenceGenerator(
+            name= "user_sequence",
+            sequenceName = "user_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "user_sequence"
+    )
     private Long userId;
     private String userName;
     private String userEmail;
@@ -27,19 +38,20 @@ public class User {
     public User() {
     }
 
-    public User(Long userId, String userName, String userEmail, String userPassword, LocalDateTime userCreationDate) {
-        this.userId = userId;
+    public User(String userName, String userEmail, String userPassword, LocalDateTime userCreationDate) {
         this.userName = userName;
         this.userEmail = userEmail;
         this.userPassword = userPassword;
         this.userCreationDate = userCreationDate;
     }
 
-    public User(String userName, String userEmail, String userPassword, LocalDateTime userCreationDate) {
+    public User(Long userId, String userName, String userEmail, String userPassword, LocalDateTime userCreationDate, List<Event> events) {
+        this.userId = userId;
         this.userName = userName;
         this.userEmail = userEmail;
         this.userPassword = userPassword;
         this.userCreationDate = userCreationDate;
+        this.events = events;
     }
 
     public Long getUserId() {
