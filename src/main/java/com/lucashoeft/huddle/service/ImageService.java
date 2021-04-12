@@ -16,8 +16,4 @@ public class ImageService {
     public ImageService(ImageRepository imageRepository) {
         this.imageRepository = imageRepository;
     }
-
-    public List<Image> getImages() {
-        return imageRepository.findAll();
-    }
 }
