@@ -1,5 +1,7 @@
-package com.lucashoeft.huddle.user;
+package com.lucashoeft.huddle.service;
 
+import com.lucashoeft.huddle.model.User;
+import com.lucashoeft.huddle.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

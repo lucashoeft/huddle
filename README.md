@@ -6,7 +6,6 @@ Warning: Not ready for production!
 
 ## Used Technologies
 
-* Maven
 * Docker
 * Spring Boot 2.4.4 (with Maven, Java 11)
 * Postgres 12

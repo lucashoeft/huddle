@@ -1,6 +1,4 @@
-package com.lucashoeft.huddle.image;
-
-import com.lucashoeft.huddle.event.Event;
+package com.lucashoeft.huddle.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

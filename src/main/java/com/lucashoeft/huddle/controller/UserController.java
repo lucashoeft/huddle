@@ -1,5 +1,7 @@
-package com.lucashoeft.huddle.user;
+package com.lucashoeft.huddle.controller;
 
+import com.lucashoeft.huddle.model.User;
+import com.lucashoeft.huddle.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

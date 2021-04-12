@@ -1,5 +1,6 @@
-package com.lucashoeft.huddle.user;
+package com.lucashoeft.huddle.repository;
 
+import com.lucashoeft.huddle.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

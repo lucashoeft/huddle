@@ -1,4 +1,4 @@
-package com.lucashoeft.huddle.invitation;
+package com.lucashoeft.huddle.model.invitation;
 
 public enum InvitationStatus {
     OPEN,

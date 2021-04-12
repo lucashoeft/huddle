@@ -1,4 +1,4 @@
-package com.lucashoeft.huddle.friendRequest;
+package com.lucashoeft.huddle.model.friendRequest;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;

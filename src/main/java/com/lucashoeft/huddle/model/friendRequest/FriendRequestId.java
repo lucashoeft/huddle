@@ -1,4 +1,4 @@
-package com.lucashoeft.huddle.friendRequest;
+package com.lucashoeft.huddle.model.friendRequest;
 
 import javax.persistence.Embeddable;
 import java.io.Serializable;

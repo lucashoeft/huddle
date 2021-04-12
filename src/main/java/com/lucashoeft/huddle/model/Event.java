@@ -1,8 +1,7 @@
-package com.lucashoeft.huddle.event;
+package com.lucashoeft.huddle.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.lucashoeft.huddle.image.Image;
-import com.lucashoeft.huddle.user.User;
+import com.lucashoeft.huddle.model.Image;
+import com.lucashoeft.huddle.model.User;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

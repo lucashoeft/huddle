@@ -1,21 +1,21 @@
 package com.lucashoeft.huddle.config;
 
-import com.lucashoeft.huddle.event.Event;
-import com.lucashoeft.huddle.event.EventRepository;
-import com.lucashoeft.huddle.friendRequest.FriendRequest;
-import com.lucashoeft.huddle.friendRequest.FriendRequestId;
-import com.lucashoeft.huddle.friendRequest.FriendRequestRepository;
-import com.lucashoeft.huddle.friends.Friends;
-import com.lucashoeft.huddle.friends.FriendsId;
-import com.lucashoeft.huddle.friends.FriendsRepository;
-import com.lucashoeft.huddle.image.Image;
-import com.lucashoeft.huddle.image.ImageRepository;
-import com.lucashoeft.huddle.invitation.Invitation;
-import com.lucashoeft.huddle.invitation.InvitationId;
-import com.lucashoeft.huddle.invitation.InvitationRepository;
-import com.lucashoeft.huddle.invitation.InvitationStatus;
-import com.lucashoeft.huddle.user.User;
-import com.lucashoeft.huddle.user.UserRepository;
+import com.lucashoeft.huddle.model.Event;
+import com.lucashoeft.huddle.repository.EventRepository;
+import com.lucashoeft.huddle.model.friendRequest.FriendRequest;
+import com.lucashoeft.huddle.model.friendRequest.FriendRequestId;
+import com.lucashoeft.huddle.repository.FriendRequestRepository;
+import com.lucashoeft.huddle.model.friends.Friends;
+import com.lucashoeft.huddle.model.friends.FriendsId;
+import com.lucashoeft.huddle.repository.FriendsRepository;
+import com.lucashoeft.huddle.model.Image;
+import com.lucashoeft.huddle.repository.ImageRepository;
+import com.lucashoeft.huddle.model.invitation.Invitation;
+import com.lucashoeft.huddle.model.invitation.InvitationId;
+import com.lucashoeft.huddle.repository.InvitationRepository;
+import com.lucashoeft.huddle.model.invitation.InvitationStatus;
+import com.lucashoeft.huddle.model.User;
+import com.lucashoeft.huddle.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -83,6 +83,10 @@ public class UserConfig {
 
             friendsRepository.saveAll(
                     List.of(friends1)
+            );
+
+            friendRequestRepository.saveAll(
+                    List.of(friendRequest1)
             );
         };
     }
