@@ -4,13 +4,13 @@ This is the backend for an imaginary application similar to 'Beer With Me' where
 
 Warning: Not ready for production!
 
-## Used Technologies
+### Used Technologies
 
 * Docker
 * Spring Boot 2.4.4 (with Maven, Java 11)
 * Postgres 12
 
-## Get started
+### Get started
 
 **1. Start up Docker**
 
@@ -46,3 +46,10 @@ For further insights check out the data model.
 Disclaimer: The `Friends`-table is really time inefficient, but I only wanted to use a RDBMS. For real world usage, a graph database would be way more efficient!
 
 ### User Interface Mockups
+
+tbd (to be designed)
+
+### ToDo
+
+* Security / Authentication
+* Full implementation of the APIs

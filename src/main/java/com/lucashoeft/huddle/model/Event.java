@@ -5,6 +5,7 @@ import com.lucashoeft.huddle.model.User;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -38,8 +39,8 @@ public class Event {
     private Double longitude;
     private String description;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "imageId", nullable = false)
+    @OneToOne
+    @JoinColumn(name = "imageId")
     private Image image;
     private LocalDateTime creationTime;
 
@@ -47,17 +48,6 @@ public class Event {
     }
 
     public Event(User eventOwner, String eventName, Double latitude, Double longitude, String description, Image image, LocalDateTime creationTime) {
-        this.eventOwner = eventOwner;
-        this.eventName = eventName;
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.description = description;
-        this.image = image;
-        this.creationTime = creationTime;
-    }
-
-    public Event(Long eventId, User eventOwner, String eventName, Double latitude, Double longitude, String description, Image image, LocalDateTime creationTime) {
-        this.eventId = eventId;
         this.eventOwner = eventOwner;
         this.eventName = eventName;
         this.latitude = latitude;

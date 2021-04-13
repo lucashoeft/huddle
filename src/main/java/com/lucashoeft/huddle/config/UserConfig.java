@@ -57,7 +57,7 @@ public class UserConfig {
 
             Image image1 = new Image(1L,"google.com");
 
-            Event event1 = new Event(1L,user1,"Volleyball",52.442651,13.216047,"Spielen bestimmt noch 2 Stunden!", image1,LocalDateTime.of(2021,Month.APRIL,7,18,51));
+            Event event1 = new Event(user1,"Volleyball",52.442651,13.216047,"Spielen bestimmt noch 2 Stunden!", image1,LocalDateTime.of(2021,Month.APRIL,7,18,51));
 
             Invitation invitation1 = new Invitation(new InvitationId(1L,1L), InvitationStatus.OPEN);
 
